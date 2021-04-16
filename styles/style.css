@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    --dirtyGreen: rgb(102,137, 38)
+}
+
+body {
+    padding: 3em;
+}
+a {
+    color: #000;
+    text-decoration: none; 
+}
+
+.cv_email {
+    color: var(--dirtyGreen);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+.cv_header {
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+.sectionHeader {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    border-top: .2em solid var(--dirtyGreen);
+    padding: .3em 0 .7em;
+    border-bottom: .2em solid var(--dirtyGreen);
+}
+
+.sectionPara {
+    letter-spacing: .05em;
+    padding: .3em 0;
+}
+
+.skills_flex {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 700px) {
+    :root{
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .skills_flex {
+        flex-wrap: wrap;
+    }
+}
+
+li {
+    list-style: none;
+    line-height: 180%;
+}
+
+li::before{
+    content: '\2022';
+    color: var(--dirtyGreen);
+    margin-right: 1em;
+}
+
+
+
+.experience_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .3em;
+    padding-top: .2em;
+}
+
+.cv_experience ul li{
+    display: flex;
+}
+
+.cv_skills {
+    padding-bottom: 1em;
+}
+
+.cv_postHeld {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.postHeld_span {
+    color: var(--dirtyGreen);
+    text-transform:initial;
+}
+
+.postHeld_year {
+    font-weight: 700;
+}
+
+.cv_experience {
+    padding-bottom: 1.5em;
+}
+
+.education_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5em;
+}
+
+.education_flex > p:nth-child(2) {
+    font-weight: 700;
+}
+
+.professional_flex > li:before {
+    content: '\2713';
+    color: black;
+    padding-left: 2em;
+}
+
+.professional_flex > li {
+    display: flex;
+    
+}
+
+.professional_flex >li > span {
+    margin-left: auto;
+    font-weight: bold;
+    display: block;
+}
+
+.cv_personal {
+    padding-bottom: 1.5em;
+}
+.ref {
+    border-top: .1em solid black;
+    color: rgba(17, 17, 97, 0.75);
+    padding-top: .5em;
+    font-size: 1rem;
+
+}
+
